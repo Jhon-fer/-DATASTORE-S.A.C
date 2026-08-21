@@ -1,5 +1,3 @@
-Claro. Te lo dejo **sin bloque de código**, listo para copiar directamente como `README.md`. Está basado en el archivo que compartiste. 
-
 # 📊 DATASTORE S.A.C. — Sistema de Análisis de Ventas
 
 > **Dashboard interactivo para el análisis, procesamiento y visualización de datos de ventas**
