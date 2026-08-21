@@ -1,5 +1,7 @@
 # 📊 DATASTORE S.A.C. — Sistema de Análisis de Ventas
 
+python -m streamlit run app.py
+
 > **Dashboard interactivo para el análisis, procesamiento y visualización de datos de ventas con IA integrada**
 
 Aplicación web desarrollada con **Python** y **Streamlit**, orientada al procesamiento, análisis estadístico y visualización interactiva de datos de ventas de **DATASTORE S.A.C.**
