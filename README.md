@@ -1,60 +1,79 @@
-Claro. Tu README tiene buena información, pero está duplicado, tiene algunas inconsistencias y puede mejorar bastante en estructura, claridad y presentación profesional. También conviene aclarar que OpenPyXL solo es necesario si realmente trabajas con Excel, y evitar afirmar resultados concretos si están protegidos por confidencialidad.
+# 📊 DATASTORE S.A.C. — Sistema de Análisis de Ventas
 
-Te dejo una versión corregida y más profesional, lista para reemplazar tu README.md:
+> **Dashboard interactivo para el análisis, procesamiento y visualización de datos de ventas**
 
-📊 DATASTORE S.A.C. — Sistema de Análisis de Ventas
+Aplicación web desarrollada con **Python** y **Streamlit**, orientada al procesamiento, análisis estadístico y visualización interactiva de datos de ventas de **DATASTORE S.A.C.**
 
-Aplicación web interactiva desarrollada con Python, Streamlit, Pandas, NumPy y Plotly para el procesamiento, análisis estadístico y visualización de datos de ventas de DATASTORE S.A.C.
+El sistema permite transformar datos comerciales en información útil para facilitar el análisis y apoyar la toma de decisiones relacionadas con **productos, categorías, períodos de venta, inventario y rendimiento por sede**.
 
-El sistema permite transformar datos de ventas en información útil para apoyar la toma de decisiones empresariales, especialmente en aspectos relacionados con productos, categorías, inventario, períodos de venta y rendimiento de las diferentes sedes.
+> 🔐 **Nota de privacidad:** Los datos reales de DATASTORE S.A.C. pueden contener información empresarial confidencial. Por motivos de privacidad, este README no expone nombres reales de productos, sedes, cantidades, montos u otros datos sensibles. Cuando es necesario representar un resultado específico, se utiliza `XXXX`.
 
-⚠️ Nota de privacidad: Por motivos de confidencialidad, este documento no muestra nombres reales de productos, sedes, categorías, cantidades ni otros datos empresariales sensibles. Cuando es necesario mencionar resultados específicos, se utiliza XXXX como valor representativo.
+---
 
-📌 Descripción del proyecto
+## 📌 Descripción del proyecto
 
-El proyecto consiste en un dashboard interactivo de análisis de ventas que permite explorar y comprender el comportamiento comercial de DATASTORE S.A.C.
+**DATASTORE S.A.C. — Sistema de Análisis de Ventas** es una aplicación web interactiva que permite explorar y analizar información relacionada con las ventas de una empresa.
 
-La aplicación integra procesos de carga, validación, limpieza, transformación, análisis y visualización de datos, proporcionando indicadores y gráficos que facilitan la interpretación de la información.
+El proyecto integra un flujo completo de procesamiento de datos:
 
-El flujo general del sistema comprende:
+```text
+Carga de datos
+      ↓
+Validación
+      ↓
+Limpieza
+      ↓
+Transformación
+      ↓
+Análisis estadístico
+      ↓
+Visualización interactiva
+      ↓
+Interpretación
+      ↓
+Conclusiones
+      ↓
+Recomendaciones
 
-Carga de los datos.
-Validación de la información.
-Limpieza y preparación de los datos.
-Transformación de variables.
-Cálculo de indicadores estadísticos.
-Análisis de productos.
-Análisis por categorías.
-Análisis temporal.
-Análisis por sede.
-Generación de visualizaciones interactivas.
-Interpretación de resultados.
-Generación de conclusiones y recomendaciones.
+
+La aplicación busca convertir los datos disponibles en información comprensible para facilitar la identificación de tendencias, oportunidades y posibles puntos de mejora.
+
 🎯 Objetivos
 Objetivo general
 
-Desarrollar una aplicación web interactiva que permita analizar las ventas de DATASTORE S.A.C. y convertir los datos obtenidos en información útil para apoyar la toma de decisiones empresariales.
+Desarrollar una aplicación web interactiva que permita analizar los datos de ventas de DATASTORE S.A.C., convirtiendo los registros comerciales en información útil para apoyar la toma de decisiones empresariales.
 
 Objetivos específicos
 Procesar y validar los datos de ventas.
-Detectar y tratar posibles inconsistencias en la información.
+Detectar y tratar posibles inconsistencias.
+Limpiar y transformar la información antes del análisis.
 Calcular indicadores generales de desempeño comercial.
-Identificar los productos con mayor y menor demanda.
-Determinar las categorías con mayor participación en las ventas.
-Identificar los períodos con mayor facturación.
+Identificar productos con mayor y menor demanda.
+Determinar las categorías con mayor participación.
+Analizar la evolución de las ventas a través del tiempo.
 Comparar el rendimiento de las diferentes sedes.
-Representar los resultados mediante gráficos interactivos.
-Facilitar la interpretación de los resultados obtenidos.
+Crear visualizaciones interactivas.
+Facilitar la interpretación de los resultados.
 Generar conclusiones basadas en los datos.
 Proponer recomendaciones orientadas a mejorar la gestión comercial.
+👥 Usuarios / Integrantes
+
+El proyecto ha sido desarrollado por los siguientes integrantes:
+
+Usuario	Nombre
+👤 Usuario 1	HUENDISABEL ANGIELIZ TORRES LOPE
+👤 Usuario 2	LUCIA NATALY PUMA CHURA
 🛠️ Tecnologías utilizadas
-Tecnología	Función
-Python	Lenguaje principal del proyecto
-Streamlit	Desarrollo de la interfaz web y dashboard
-Pandas	Limpieza, transformación y análisis de datos
-NumPy	Operaciones y cálculos numéricos
-Plotly	Creación de visualizaciones interactivas
-OpenPyXL	Lectura y procesamiento de archivos Excel
+Tecnología	Uso en el proyecto
+🐍 Python	Lenguaje principal de desarrollo
+🎨 Streamlit	Creación de la aplicación web y dashboard
+🐼 Pandas	Limpieza, transformación y análisis de datos
+🔢 NumPy	Operaciones y cálculos numéricos
+📊 Plotly	Creación de gráficos interactivos
+📗 OpenPyXL	Procesamiento de archivos Excel cuando el proyecto utiliza .xlsx
+
+Nota: OpenPyXL solo es necesario si la aplicación trabaja con archivos Excel (.xlsx). Si el proyecto utiliza únicamente archivos .csv, esta dependencia puede omitirse.
+
 📂 Estructura del proyecto
 -DATASTORE-S.A.C/
 │
@@ -71,55 +90,64 @@ OpenPyXL	Lectura y procesamiento de archivos Excel
 ├── .gitignore
 └── LICENSE
 
+Descripción de los principales archivos
+Archivo / Carpeta	Descripción
+app.py	Archivo principal de la aplicación Streamlit
+data/	Carpeta destinada a los datos utilizados por la aplicación
+assets/	Recursos visuales como logotipos e imágenes
+README.md	Documentación del proyecto
+requirements.txt	Dependencias necesarias para ejecutar el proyecto
+.gitignore	Archivos que Git debe ignorar
+LICENSE	Licencia del proyecto
 
-El nombre del archivo principal puede variar dependiendo de la versión final del proyecto.
+La estructura puede variar dependiendo de la versión final del proyecto.
 
-🔄 Flujo de procesamiento
-
-El sistema sigue un proceso estructurado para transformar los datos en información útil:
-
-                  DATOS DE VENTAS
-                         │
-                         ▼
-                  Carga de datos
-                         │
-                         ▼
-                 Validación de datos
-                         │
-                         ▼
-                Limpieza de información
-                         │
-                         ▼
-                Preparación de datos
-                         │
-                         ▼
-                Análisis estadístico
-                         │
-             ┌───────────┼───────────┐
-             ▼           ▼           ▼
-         Productos   Categorías    Sedes
-             │           │           │
-             └───────────┼───────────┘
-                         ▼
-                  Análisis temporal
-                         │
-                         ▼
-                  Visualizaciones
-                         │
-                         ▼
-                   Interpretación
-                         │
-                         ▼
-                    Conclusiones
-                         │
-                         ▼
-                   Recomendaciones
+🔄 Flujo de procesamiento de datos
+                   ┌──────────────────┐
+                   │  DATOS DE VENTAS │
+                   └────────┬─────────┘
+                            ↓
+                   ┌──────────────────┐
+                   │ Carga de datos   │
+                   └────────┬─────────┘
+                            ↓
+                   ┌──────────────────┐
+                   │ Validación       │
+                   └────────┬─────────┘
+                            ↓
+                   ┌──────────────────┐
+                   │ Limpieza         │
+                   └────────┬─────────┘
+                            ↓
+                   ┌──────────────────┐
+                   │ Transformación   │
+                   └────────┬─────────┘
+                            ↓
+                 ┌──────────────────────┐
+                 │ Análisis estadístico │
+                 └──────────┬───────────┘
+                            ↓
+             ┌──────────────┼──────────────┐
+             ↓              ↓              ↓
+        Productos       Categorías       Sedes
+             │              │              │
+             └──────────────┼──────────────┘
+                            ↓
+                    Análisis temporal
+                            ↓
+                   Visualizaciones
+                            ↓
+                    Interpretación
+                            ↓
+                      Conclusiones
+                            ↓
+                    Recomendaciones
 
 🧹 Procesamiento y limpieza de datos
 
-Antes de realizar el análisis, los datos pasan por una etapa de revisión y preparación.
+Antes de realizar los análisis, los datos pasan por una etapa de revisión y preparación.
 
-Entre las principales operaciones realizadas se encuentran:
+Entre las principales operaciones se encuentran:
 
 Identificación y revisión de columnas.
 Validación de tipos de datos.
@@ -127,27 +155,37 @@ Detección de valores faltantes.
 Conversión de variables numéricas.
 Conversión y validación de fechas.
 Revisión de registros inválidos.
+Tratamiento de inconsistencias.
 Preparación de variables para el análisis.
 Cálculo de métricas necesarias para el dashboard.
 
-Estas operaciones permiten mejorar la calidad de los datos y reducir posibles errores durante el análisis.
+Estas operaciones permiten mejorar la calidad de la información y reducir posibles errores durante el análisis.
 
 📊 Indicadores principales
 
-El dashboard presenta indicadores generales que permiten obtener una visión rápida del desempeño comercial.
+El dashboard presenta indicadores que permiten obtener una visión general del comportamiento comercial.
 
-Entre ellos se encuentran:
+💰 Ventas totales
 
-💰 Ventas totales: monto acumulado de las ventas registradas.
-🧾 Número de transacciones: cantidad de operaciones realizadas.
-📦 Unidades vendidas: cantidad total de productos comercializados.
-📈 Venta promedio: promedio de venta por transacción.
+Monto acumulado correspondiente a las ventas registradas.
 
-Estos indicadores funcionan como una visión general antes de profundizar en los diferentes análisis.
+🧾 Número de transacciones
+
+Cantidad de operaciones comerciales registradas.
+
+📦 Unidades vendidas
+
+Cantidad total de productos comercializados.
+
+📈 Venta promedio
+
+Promedio del valor de las ventas por transacción.
+
+Estos indicadores permiten obtener una visión rápida del desempeño antes de realizar análisis más específicos.
 
 🏆 Análisis de productos
 
-El sistema permite analizar el comportamiento de los productos comercializados.
+La aplicación permite analizar el comportamiento de los productos comercializados.
 
 Producto con mayor demanda
 
@@ -159,24 +197,24 @@ Planificar los niveles de inventario.
 Reducir el riesgo de quiebres de stock.
 Priorizar productos de alta rotación.
 Diseñar estrategias comerciales.
-Analizar oportunidades de crecimiento.
+Identificar oportunidades de crecimiento.
 Producto con menor demanda
 
 También se identifican los productos con menor cantidad de unidades vendidas.
 
 Esta información puede servir para:
 
-Evaluar la aplicación de promociones.
+Evaluar promociones.
 Analizar estrategias de precios.
 Revisar la aceptación del producto.
 Diseñar campañas comerciales.
 Optimizar los niveles de inventario.
 
-Los nombres y valores reales de los productos se mantienen confidenciales y se representan mediante XXXX cuando corresponde.
+🔐 Los nombres y valores reales de los productos se mantienen confidenciales.
 
 🏷️ Análisis por categoría
 
-La aplicación permite analizar la facturación generada por cada categoría de productos.
+El sistema permite analizar la facturación y participación de las diferentes categorías de productos.
 
 Este análisis permite identificar:
 
@@ -184,13 +222,16 @@ Categorías con mayor aporte económico.
 Categorías con menor participación.
 Distribución porcentual de las ventas.
 Diferencias de rendimiento entre categorías.
-Posibles oportunidades de inversión comercial.
+Posibles oportunidades comerciales.
 
-Para facilitar la interpretación, se utilizan visualizaciones como gráficos de barras y gráficos circulares.
+Para facilitar la interpretación se utilizan visualizaciones como:
 
+Gráficos de barras.
+Gráficos circulares.
+Comparaciones porcentuales.
 📅 Análisis temporal
 
-El dashboard permite analizar la evolución de las ventas según diferentes períodos.
+El dashboard permite estudiar la evolución de las ventas según diferentes períodos.
 
 Este análisis ayuda a identificar:
 
@@ -200,61 +241,71 @@ Variaciones en el comportamiento de las ventas.
 Posibles patrones de demanda.
 Tendencias comerciales.
 
-Los resultados pueden utilizarse para:
+La información puede utilizarse para:
 
 Planificar campañas comerciales.
 Preparar inventarios.
-Anticipar períodos de alta demanda.
-Comparar el rendimiento entre períodos.
+Anticipar períodos de mayor demanda.
+Comparar períodos.
 Mejorar la planificación comercial.
 🏢 Análisis por sede
 
-El sistema permite comparar la facturación de las diferentes sedes de DATASTORE S.A.C.
+La aplicación permite comparar el rendimiento comercial de las diferentes sedes de DATASTORE S.A.C.
 
 Este análisis permite:
 
-Comparar el rendimiento comercial de las sedes.
-Identificar las sedes con mejor desempeño.
-Detectar diferencias en la facturación.
-Analizar posibles estrategias comerciales.
+Comparar la facturación entre sedes.
+Identificar sedes con mejor desempeño.
+Detectar diferencias comerciales.
+Analizar posibles estrategias de venta.
 Identificar oportunidades de mejora.
 
-Los resultados específicos relacionados con las sedes se mantienen confidenciales.
+🔐 Los resultados específicos relacionados con las sedes se mantienen confidenciales.
 
 📈 Visualizaciones
 
-Las visualizaciones se desarrollan utilizando Plotly, permitiendo una interacción más dinámica con los datos.
+Las visualizaciones se desarrollan principalmente utilizando Plotly, permitiendo una interacción dinámica con los datos.
 
-Entre los principales gráficos utilizados se encuentran:
+Entre los principales tipos de gráficos se encuentran:
 
 📊 Gráficos de barras.
 🥧 Gráficos circulares.
 📈 Evolución temporal de las ventas.
 📦 Comparación de productos.
-🏷️ Distribución de ventas por categoría.
-🏢 Comparación de ventas por sede.
+🏷️ Distribución por categoría.
+🏢 Comparación por sede.
 
-Las visualizaciones buscan facilitar la identificación de patrones, diferencias y tendencias presentes en los datos.
+El objetivo de las visualizaciones es facilitar la identificación de patrones, diferencias y tendencias.
 
 🧠 Interpretación de resultados
 
-Una característica importante del proyecto es que el dashboard no se limita a presentar estadísticas.
+El dashboard no se limita a mostrar valores estadísticos.
 
-Cada análisis busca estructurarse en tres niveles:
+Los resultados se pueden interpretar mediante tres niveles:
 
 📌 Resultado
 
-Presenta el valor o indicador obtenido a partir de los datos.
+Presenta el indicador o valor obtenido a partir de los datos.
 
 🔎 Interpretación
 
-Explica el significado del resultado dentro del contexto comercial de la empresa.
+Explica qué significa el resultado dentro del contexto comercial.
 
 💡 Decisión propuesta
 
-Plantea una posible acción empresarial que podría considerarse a partir de la información obtenida.
+Plantea una posible acción empresarial basada en la información obtenida.
 
-De esta manera, el sistema busca transformar los datos en información y la información en posibles decisiones empresariales.
+De esta manera:
+
+Datos
+  ↓
+Información
+  ↓
+Análisis
+  ↓
+Interpretación
+  ↓
+Posible decisión
 
 ⚠️ Validación y manejo de errores
 
@@ -262,7 +313,7 @@ La aplicación contempla diferentes situaciones que pueden afectar el análisis.
 
 Datos inconsistentes
 
-Los archivos pueden contener valores faltantes, formatos incorrectos o información que requiere transformación.
+Los archivos pueden contener valores faltantes, formatos incorrectos o información que requiera transformación.
 
 Solución: se aplican procesos de validación y limpieza mediante Pandas.
 
@@ -274,21 +325,15 @@ Solución: se realizan conversiones de tipos antes de ejecutar los cálculos.
 
 Datos insuficientes
 
-Algunas visualizaciones requieren que determinadas columnas existan y contengan información válida.
+Algunas visualizaciones requieren determinadas columnas y datos válidos.
 
-Solución: se realizan validaciones antes de generar los gráficos. Cuando no existe información suficiente, la aplicación muestra un mensaje informativo.
+Solución: se realizan validaciones antes de generar los gráficos y se muestran mensajes informativos cuando la información disponible no es suficiente.
 
 Visualización poco estructurada
 
-Una presentación basada únicamente en texto puede dificultar la interpretación de los resultados.
+Una presentación basada únicamente en texto puede dificultar la interpretación.
 
-Solución: se organiza la información mediante componentes visuales y tarjetas dentro de Streamlit.
-
-Conversión de estadísticas en decisiones
-
-Mostrar únicamente valores estadísticos no siempre resulta suficiente para un análisis empresarial.
-
-Solución: se incorpora una etapa de interpretación que relaciona los resultados con posibles acciones y decisiones empresariales.
+Solución: se organiza la información mediante indicadores, gráficos y componentes visuales de Streamlit.
 
 💻 Requisitos
 
@@ -298,7 +343,7 @@ Python 3.10 o superior
 Git
 pip
 
-Se recomienda utilizar un entorno virtual para mantener aisladas las dependencias del proyecto.
+También se recomienda utilizar un entorno virtual para mantener aisladas las dependencias del proyecto.
 
 📥 Instalación
 1. Clonar el repositorio
@@ -308,25 +353,17 @@ git clone https://github.com/Jhon-fer/-DATASTORE-S.A.C.git
 cd -DATASTORE-S.A.C
 
 3. Crear un entorno virtual
-
-En Windows:
-
+Windows
 python -m venv venv
 
-
-En Linux/macOS:
-
+Linux/macOS
 python3 -m venv venv
 
 4. Activar el entorno virtual
-
-En Windows:
-
+Windows
 venv\Scripts\activate
 
-
-En Linux/macOS:
-
+Linux/macOS
 source venv/bin/activate
 
 5. Instalar las dependencias
@@ -350,23 +387,23 @@ Abrir la dirección indicada en el navegador para acceder al dashboard.
 
 El proyecto utiliza un conjunto de datos de ventas para realizar los análisis.
 
-Por defecto, el archivo puede ubicarse en:
+Por defecto, puede utilizarse:
 
 data/ventas.csv
 
 
-Si se utiliza un archivo Excel:
+Si la aplicación trabaja con Excel:
 
 data/ventas.xlsx
 
 
-La ruta, el nombre y el formato del archivo deben coincidir con la configuración utilizada en el código de la aplicación.
+La ruta, el nombre y el formato del archivo deben coincidir con la configuración implementada en app.py.
 
 🔐 Los datos reales de la empresa no deben publicarse en repositorios públicos si contienen información confidencial.
 
 🔐 Seguridad y privacidad
 
-No se deben incluir en el repositorio:
+Nunca se deben incluir en un repositorio público:
 
 Contraseñas.
 Tokens de autenticación.
@@ -377,9 +414,19 @@ Información personal sensible.
 Información financiera confidencial.
 Datos empresariales privados.
 
-Para manejar información sensible se recomienda utilizar variables de entorno o mecanismos seguros de configuración.
+Se recomienda utilizar variables de entorno o mecanismos seguros de configuración para gestionar información sensible.
 
-El archivo .gitignore debe configurarse para evitar subir accidentalmente información privada.
+El archivo .gitignore debe configurarse correctamente para evitar subir accidentalmente archivos privados.
+
+Ejemplo:
+
+venv/
+.env
+__pycache__/
+*.pyc
+
+
+Si el dataset es confidencial, también puede añadirse *.csv o *.xlsx al .gitignore.
 
 ⚡ Ejecución rápida
 
@@ -388,28 +435,32 @@ Después de clonar el repositorio:
 git clone https://github.com/Jhon-fer/-DATASTORE-S.A.C.git
 cd -DATASTORE-S.A.C
 
+
+Crear el entorno virtual:
+
 python -m venv venv
 
 
-En Windows:
+Activarlo en Windows:
 
 venv\Scripts\activate
 
 
-En Linux/macOS:
+Activarlo en Linux/macOS:
 
 source venv/bin/activate
 
 
-Finalmente:
+Instalar las dependencias:
 
 pip install -r requirements.txt
+
+
+Ejecutar la aplicación:
+
 streamlit run app.py
 
 🏗️ Arquitectura del proyecto
-
-La aplicación utiliza una arquitectura sencilla orientada al procesamiento y visualización de datos:
-
                          PYTHON
                             │
              ┌──────────────┼──────────────┐
@@ -418,15 +469,18 @@ La aplicación utiliza una arquitectura sencilla orientada al procesamiento y vi
           Pandas          NumPy         Plotly
              │              │              │
              ▼              ▼              ▼
-       Limpieza y       Cálculos       Gráficos
-       transformación   numéricos     interactivos
+         Limpieza       Cálculos       Gráficos
+       y transformación  numéricos    interactivos
              │              │              │
              └──────────────┼──────────────┘
                             ▼
                        STREAMLIT
                             │
                             ▼
-                     DASHBOARD WEB
+                    DASHBOARD WEB
+                            │
+                            ▼
+                  Toma de decisiones
 
 📊 Resultado esperado
 
@@ -447,25 +501,25 @@ El objetivo final es proporcionar una herramienta que facilite la exploración d
 
 💡 Recomendaciones empresariales
 
-Las recomendaciones generadas por el sistema se orientan principalmente a cinco áreas:
+Las recomendaciones generadas a partir del análisis pueden orientarse a diferentes áreas.
 
-Inventario
+📦 Inventario
 
 Mantener niveles adecuados de stock para productos de alta demanda y evaluar estrategias para productos de baja rotación.
 
-Ventas
+🛒 Ventas
 
 Fortalecer las categorías que presentan una mayor contribución a la facturación.
 
-Marketing
+📢 Marketing
 
 Evaluar promociones y estrategias comerciales para productos con menor demanda.
 
-Sedes
+🏢 Sedes
 
-Analizar las prácticas comerciales de las sedes con mejor rendimiento para identificar posibles estrategias replicables.
+Analizar las prácticas comerciales de las sedes con mejor rendimiento para identificar estrategias que puedan ser replicadas.
 
-Planificación
+📅 Planificación
 
 Utilizar el comportamiento histórico de las ventas para anticipar períodos de mayor demanda y mejorar la planificación de inventario y campañas.
 
@@ -473,29 +527,26 @@ Utilizar el comportamiento histórico de las ventas para anticipar períodos de 
 
 Entre las posibles mejoras del proyecto se encuentran:
 
- Implementar filtros avanzados.
- Incorporar nuevos indicadores KPI.
- Permitir la exportación de reportes a Excel.
- Permitir la generación de reportes PDF.
- Automatizar la actualización de los datos.
- Conectar la aplicación con una base de datos.
- Implementar autenticación de usuarios.
- Desplegar la aplicación en la nube.
- Incorporar modelos de análisis predictivo.
- Implementar predicción de demanda.
- Incorporar análisis de tendencias futuras.
- Mejorar la personalización visual del dashboard.
-👨‍💻 Autor
+Implementar filtros avanzados.
+Incorporar nuevos indicadores KPI.
+Permitir la exportación de reportes a Excel.
+Permitir la generación de reportes PDF.
+Automatizar la actualización de los datos.
+Conectar la aplicación con una base de datos.
+Implementar autenticación de usuarios.
+Desplegar la aplicación en la nube.
+Incorporar modelos de análisis predictivo.
+Implementar predicción de demanda.
+Incorporar análisis de tendencias futuras.
+Mejorar la personalización visual del dashboard.
+👥 Equipo del proyecto
+HUENDISABEL ANGIELIZ TORRES LOPE
 
-Jhon-fer
+Rol: Integrante del proyecto.
 
-Proyecto:
+LUCIA NATALY PUMA CHURA
 
-DATASTORE S.A.C. — Sistema de Análisis de Ventas
-
-Repositorio:
-
-Repositorio de DATASTORE S.A.C. en GitHub
+Rol: Integrante del proyecto.
 
 📄 Licencia
 
@@ -505,8 +556,39 @@ La utilización, modificación o distribución del proyecto debe respetar las co
 
 ⭐ Resumen
 
-DATASTORE S.A.C. — Sistema de Análisis de Ventas integra procesamiento de datos, análisis estadístico y visualización interactiva en una aplicación desarrollada con Python y Streamlit.
+DATASTORE S.A.C. — Sistema de Análisis de Ventas integra procesamiento de datos, análisis estadístico y visualización interactiva en una aplicación desarrollada con Python, Pandas, NumPy, Plotly y Streamlit.
 
 El proyecto busca facilitar el análisis de productos, categorías, períodos y sedes, proporcionando indicadores y visualizaciones que permitan comprender el comportamiento de las ventas y apoyar la toma de decisiones empresariales.
 
-Datos → Procesamiento → Análisis → Visualización → Interpretación → Decisión
+┌─────────┐
+│  DATOS  │
+└────┬────┘
+     ↓
+┌──────────────┐
+│ PROCESAMIENTO│
+└──────┬───────┘
+       ↓
+┌───────────┐
+│  ANÁLISIS │
+└─────┬─────┘
+      ↓
+┌───────────────┐
+│ VISUALIZACIÓN │
+└───────┬───────┘
+        ↓
+┌────────────────┐
+│ INTERPRETACIÓN │
+└───────┬────────┘
+        ↓
+┌──────────────┐
+│   DECISIÓN   │
+└──────────────┘
+
+👨‍💻 Integrantes
+
+HUENDISABEL ANGIELIZ TORRES LOPE
+
+LUCIA NATALY PUMA CHURA
+
+DATASTORE S.A.C. — Sistema de Análisis de Ventas
+Transformando datos en información para una mejor toma de decisiones.
