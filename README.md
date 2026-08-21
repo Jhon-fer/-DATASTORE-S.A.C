@@ -6,8 +6,6 @@ Aplicación web desarrollada con **Python** y **Streamlit**, orientada al proces
 
 El sistema permite transformar datos comerciales en información útil para facilitar el análisis y apoyar la toma de decisiones relacionadas con **productos, categorías, períodos de venta, inventario y rendimiento por sede**.
 
-> 🔐 **Nota de privacidad:** Los datos reales de DATASTORE S.A.C. pueden contener información empresarial confidencial. Por motivos de privacidad, este README no expone nombres reales de productos, sedes, cantidades, montos u otros datos sensibles. Cuando es necesario representar un resultado específico, se utiliza `XXXX`.
-
 ## 📌 Descripción del proyecto
 
 **DATASTORE S.A.C. — Sistema de Análisis de Ventas** es una aplicación web interactiva que permite explorar y analizar información relacionada con las ventas de una empresa.
@@ -50,7 +48,6 @@ Desarrollar una aplicación web interactiva que permita analizar los datos de ve
 | 📊 Plotly    | Creación de gráficos interactivos                                  |
 | 📗 OpenPyXL  | Procesamiento de archivos Excel cuando el proyecto utiliza `.xlsx` |
 
-> **Nota:** OpenPyXL solo es necesario si la aplicación trabaja con archivos Excel (`.xlsx`). Si el proyecto utiliza únicamente archivos `.csv`, esta dependencia puede omitirse.
 
 ## 📂 Estructura del proyecto
 
