@@ -307,11 +307,64 @@ Una presentación basada únicamente en texto puede dificultar la interpretació
 
 ## 💻 Requisitos
 
-Para ejecutar el proyecto se recomienda contar con:
+Para ejecutar correctamente el proyecto, se recomienda contar con los siguientes requisitos:
 
-* Python 3.10 o superior.
-* Git.
-* pip.
+* **Python 3.10 o superior**
+* **Git**
+* **pip** (gestor de paquetes de Python)
+
+### 📦 Instalación de las librerías
+
+Las principales librerías utilizadas por el proyecto son **Streamlit, Pandas y Plotly**.
+
+Para instalarlas, abrir una terminal dentro de la carpeta del proyecto y ejecutar:
+
+`pip install streamlit pandas plotly`
+
+También puedes utilizar:
+
+`python -m pip install streamlit pandas plotly`
+
+### 🔍 Verificar la instalación
+
+Para comprobar que Python está instalado correctamente:
+
+`python --version`
+
+Para verificar la instalación de Streamlit:
+
+`python -m streamlit --version`
+
+Si los comandos anteriores muestran las versiones instaladas, el entorno está listo para ejecutar la aplicación.
+
+### 🌐 Entorno virtual
+
+También se recomienda utilizar un **entorno virtual** para mantener aisladas las dependencias del proyecto y evitar conflictos con otras aplicaciones de Python.
+
+**Windows:**
+
+`python -m venv venv`
+
+Activar el entorno virtual:
+
+`venv\Scripts\activate`
+
+**Linux/macOS:**
+
+`python3 -m venv venv`
+
+Activar el entorno virtual:
+
+`source venv/bin/activate`
+
+Una vez activado el entorno virtual, instalar las librerías necesarias:
+
+`python -m pip install streamlit pandas plotly`
+
+Finalmente, la aplicación puede ejecutarse con:
+
+`streamlit run app.py`
+
 
 También se recomienda utilizar un entorno virtual para mantener aisladas las dependencias del proyecto.
 
