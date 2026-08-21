@@ -59,10 +59,6 @@ Proponer recomendaciones orientadas a mejorar la gestión comercial.
 👥 Usuarios / Integrantes
 
 El proyecto ha sido desarrollado por los siguientes integrantes:
-
-Usuario	Nombre
-👤 Usuario 1	HUENDISABEL ANGIELIZ TORRES LOPE
-👤 Usuario 2	LUCIA NATALY PUMA CHURA
 🛠️ Tecnologías utilizadas
 Tecnología	Uso en el proyecto
 🐍 Python	Lenguaje principal de desarrollo
@@ -584,10 +580,10 @@ El proyecto busca facilitar el análisis de productos, categorías, períodos y 
 │   DECISIÓN   │
 └──────────────┘
 
+**GRUPO N°3**
 👨‍💻 Integrantes
-
 HUENDISABEL ANGIELIZ TORRES LOPE
-
+JHON FERNANDO GOMEZ QUISPE
 LUCIA NATALY PUMA CHURA
 
 DATASTORE S.A.C. — Sistema de Análisis de Ventas
